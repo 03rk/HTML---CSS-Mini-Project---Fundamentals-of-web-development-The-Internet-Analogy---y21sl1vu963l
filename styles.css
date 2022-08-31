@@ -1,53 +1,87 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: rgb(220, 211, 210);
-  margin: 0;
-  height: auto;
-  width: 100vw;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.first-page {
   display: flex;
-  padding: 0;
-  margin: 0;
-  width: 50vw;
-  height: 800px;
+  background-color: rgb(223, 226, 228);
   justify-content: center;
+  font-family: sans-serif;
 }
 
-p {
-  color: rgb(151, 158, 158);
-  line-height: 0.25;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-h1 {
-  font-weight: 400;
-  font-size: 2.5rem;
-  margin: 0;
-  text-transform: uppercase;
+main {
+  width: 70%;
 }
 
-h2 {
+.page-container {
+  display: flex;
+  box-shadow: -8px -4px 26px 5px rgba(0, 0, 0, 0.25);
+}
+
+.text-container {
+  width: 40%;
+  height: 100vh;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: -8px -4px 26px 5px rgba(0, 0, 0, 0.25);
+}
+
+.page:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.text-container > h1,
+.text-container > h2 {
+  margin-top: 200px;
+}
+
+.text-container > h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.text-container > h2 {
+  font-size: 1.5rem;
+  color: rgb(155, 149, 149);
   font-weight: 400;
-  font-size: 1.2rem;
-  margin: 0;
-  text-transform: capitalize;
+  font-size: 1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.text-container > button {
+  all: initial;
+  padding: 14px 32px;
+  border-radius: 24px;
+  border: solid black 2px;
+}
+
+.img-container {
+  width: 60%;
+}
+.img-container > .img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-work {
+  width: 100%;
 }
 
 #header {
+  padding: 1.5rem;
   text-align: center;
-  background-color: rgb(59, 57, 57);
-  margin-left: 250px;
-  margin-right: 231px;
-  color: aliceblue;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 60vw;
-  display: inline-block;
+  background: #333;
+  color: #fff;
 }
+
 #header h2 {
   border-left: dotted 1px #fff;
   border-right: dotted 1px #fff;
@@ -55,70 +89,34 @@ h2 {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.text-left {
-  width: 40%;
-  padding-top: 250px;
-  text-align: center;
-  background-color: white;
+
+.card {
+  box-shadow: -8px -4px 26px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0;
 }
 
-.btn {
-  margin-top: 20px;
-  padding-left: 40px;
-  padding-top: 15px;
-  padding-right: 40px;
-  padding-bottom: 15px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.first-right {
-  width: 10vw;
-}
-.image {
-  width: 500px;
-  height: 800px;
-}
-
-.img {
-  margin-left: 250px;
-  margin-right: 180px;
-  width: 60vw;
+.card > img {
+  width: 100%;
   height: 500px;
-  padding-top: 0px;
-  margin-bottom: -5px;
-}
-
-.caption {
+  object-fit: cover;
   text-align: center;
-  background-color: aliceblue;
-  margin-left: 250px;
-  margin-right: 300px;
-  width: 60vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: inline-block;
+  background-color: white;
 }
 
-.caption p {
-  color: rgb(19, 6, 6);
-  font-weight: 600;
+.card-text {
+  padding: 15px;
+  background-color: rgb(246, 246, 241);
+  text-align: center;
 }
 
 footer {
+  margin-top: 30px;
   text-align: center;
-  padding: 2rem 1rem;
-  margin: auto;
-  color: #333;
 }
 
-footer h3 {
-  font-size: 3rem;
-  margin-bottom: 0;
-  letter-spacing: 0.2px;
-}
-
-footer p {
-  color: #000;
-  font-family: sans-serif;
+@media (min-width: 50%) {
+  main {
+    text-align: center;
+    width: 100%;
+  }
 }
