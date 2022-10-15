@@ -1,4 +1,4 @@
-# html-css-project-boilerplate
+# Photography Website
 
 # Description
 Photograpy Website is uesd to show the skills that you have shown through it . This website is only frontend part and
@@ -11,6 +11,6 @@ explore their Buisennes .
 Technology Used :- HTML , CSS  ;
 Code Editor : - VS CODE  ;
 Repository : - GitHub  ;
-Hosted on live server : Netlify .
+Hosted on live server Netlify :- https://calm-halva-9aaad8.netlify.app
 
 
